@@ -14,7 +14,7 @@ Please bring your laptop with a Google chrome browser installed.
 
 The presentation is online at:
 
-https://tercen.github.io/high-dimensional-cyto_workshop
+https://tercen.github.io/highdimcyto_workshop
 
 # Agenda
 

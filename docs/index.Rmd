@@ -16,7 +16,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 <center>workshop on github </center>
 
-<center>(https://github.com/tercen/high-dimensional-cyto_workshop)</center>
+<center>(https://github.com/tercen/highdimcyto_workshop)</center>
 
 ## Agenda
 
