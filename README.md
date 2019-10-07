@@ -20,7 +20,7 @@ https://tercen.github.io/high-dimensional-cyto_workshop
 
 __High Dimensional Cyto Workshop Agenda__
 
-|           |          |   
+|     .     |     .    |  .
 | :---      | :---:    | :---
 | Module 1  |          |
 |           | 09:00    | __Tercen Concepts__
@@ -48,7 +48,6 @@ __High Dimensional Cyto Workshop Agenda__
 |           |          | __Differential testing with `diffcyt`__
 |           |          | - Differential abundance analysis of cells
 |           |          | - Differential functional analysis of cells
-
 |           | 12:30    | __Lunch__
 | Module 6  | 13:30    | 
 |           |          | one-2-one sessions (bring your own data)
