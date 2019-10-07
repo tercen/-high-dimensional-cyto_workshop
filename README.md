@@ -1,4 +1,4 @@
-High-dimensional cytometry data (including flow cytometry, mass cytometry or CyTOF, and oligonucleotide-tagged cytometry) is a challenge to analyze. Therefore two tools are proposed the `diffcyt` R package (statistical algorithms) and Tercen (front-end interface).
+High-dimensional cytometry data (including flow cytometry, mass cytometry or CyTOF, and oligonucleotide-tagged cytometry) is a challenge to analyze. Therefore two tools are proposed: the `diffcyt` R package (statistical algorithms) and Tercen (front-end interface).
 
 The `diffcyt` R package (Lukas Weber) implements statistical methods for differential discovery analyses in high-dimensional cytometry data based on a combination of high-resolution clustering and empirical Bayes moderated tests adapted from transcriptomics.
 
@@ -6,7 +6,7 @@ Tercen is a powerful next generation, collaborative analysis tool.  It aims for 
 
 # Tercen User Workshop
 
-The workshop is for high dimensional cytometry. It is based on `diffcyt`: R package for differential discovery in high-dimensional cytometry via high-resolution clustering. The workshop takes half a day and is split into six modules. The first module is about some concepts, the second, third and fourth is a about exploration of your data. The fifth and final module is where the researcher can bring their own dataset and have a one-2-one session with Tercen trainers.
+The workshop is for high dimensional cytometry. It is based on `diffcyt`: R package for differential discovery in high-dimensional cytometry via high-resolution clustering. The workshop takes a day and is split into six modules. The first module is about some concepts, the second, third and fourth is a about exploration of your data. The fifth is about testing differentially testing between groups of cells and the final module is where the researcher can bring their own dataset and have a one-2-one session with Tercen trainers. Please send the dataset, as a `.csv` or tab delimited file to `info@tercen.com` (at least a two days before workshop).
 
 Please bring your laptop with a Google chrome browser installed.
 

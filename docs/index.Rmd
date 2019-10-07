@@ -20,11 +20,11 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Agenda
 
-- intro to Tercen conceps
-- clustering
+- Intro to Tercen conceps
+- Clustering
 - Cluster appraisal
-- dimension reduction
-- differential testing
+- Dimension reduction
+- Differential testing
 - use your own data
 
 ## Module One
