@@ -34,17 +34,17 @@ __High Dimensional Cyto Workshop Agenda__
 |           |          | - downsampling
 | Module 3  |          | 
 |           | 10:15    | __Dimensional reduction__
-|           |          | - TSNE, UMAP
+|           |          | - TSNE, UMAP operator
 |           |          | - Visualizing reduced dimensions
 |           |          | - Visualizing clusters
 | Module 4  |          | 
-|           | 10:45    | __Cluster__
-|           |          | - FlowSOM cluster
+|           | 10:45    | __Clustering__
+|           |          | - FlowSOM clustering
 |           |          | - Diagnostic plots for checking your clusters
 |           | 11:15    | __Break__
 | Module 5  | 11:30    | 
 |           |          | __Differential testing with `diffcyt`__
-|           |          | - Intro to Bodenmiller BCR_XL data
+|           |          | - Intro to Bodenmiller BCR_XL dataset (see [screenshot](https://github.com/tercen/highdimcyto_workshop/blob/master/images/bodenmiller.png))
 |           |          | - Differential abundance analysis of cells
 |           |          | - Differential functional analysis of cells
 |           | 12:30    | __Lunch__
