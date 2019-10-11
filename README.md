@@ -42,12 +42,13 @@ __High Dimensional Cyto Workshop Agenda__
 |           |          | - FlowSOM clustering
 |           |          | - Diagnostic plots for checking your clusters
 |           | 11:15    | __Break__
-| Module 5  | 11:30    | 
-|           |          | __Differential testing with `diffcyt`__
+| Module 5  |          | 
+|           | 11:30    | __Differential testing with `diffcyt`__
 |           |          | - Intro to Bodenmiller BCR_XL dataset (see [screenshot](https://github.com/tercen/highdimcyto_workshop/blob/master/images/bodenmiller.png))
 |           |          | - Differential abundance analysis of cells
 |           |          | - Differential functional analysis of cells
 |           | 12:30    | __Lunch__
-| Module 6  | 13:30    | 
-|           |          | one-2-one sessions (bring your own data)
+| Module 6  |          | 
+|           | 13:30    | __Bring your own data__
+|           |          | - Analyze your own data
 |           | 17:00    | __End of day__
