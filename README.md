@@ -6,7 +6,7 @@ Tercen is a powerful next generation, collaborative analysis tool.  It aims for 
 
 # Tercen User Workshop
 
-The workshop is for high dimensional cytometry. It is based on `diffcyt`: R package for differential discovery in high-dimensional cytometry via high-resolution clustering. The workshop takes a day and is split into six modules. The first module is about some concepts, the second, third and fourth is a about exploration of your data. The fifth is about testing differentially testing between groups of cells and the final module is where the researcher can bring their own dataset and have a one-2-one session with Tercen trainers. Please send the dataset, as a `.csv` or tab delimited file to `info@tercen.com` (at least a two days before workshop).
+The workshop is for high dimensional cytometry. It is based on `diffcyt`: R package for differential discovery in high-dimensional cytometry via high-resolution clustering. The workshop takes a day and is split into six modules. The first module is about some concepts, the second, third and fourth is a about exploration of your data. The fifth is about testing differentially testing between groups of cells and the final module is where the researcher can bring their own dataset and have a one-2-one session with Tercen trainers. Please send the dataset, as a `.csv` or tab delimited file to `info@tercen.com` (at least a week before workshop).
 
 Please bring your laptop with a Google chrome browser installed.
 
@@ -27,25 +27,24 @@ __High Dimensional Cyto Workshop Agenda__
 |           |          | concepts (e.g. measurements, table, computed table)
 |           |          | loading up data (e.g. csv and tsv)
 |           |          | creating views (e.g. heatmaps, line graphs, profiles)
-|           | 09:30    | __Break__
+|           | 09:30    | __Coffee Break__
 | Module 2  |          | 
-|           | 09:45    | __Clustering__
-|           |          | - FlowSOM clustering & ConsensusClusterPlus metaclustering
-|           |          | - MedExprs: Median marker-expressions by cluster
-|           |          | - ClusterExprs: Marker-densities by cluster
-|           |          | - mergeClusters: Manual cluster merging
-|           |          | - ClusterHeatmap: Heatmap of (meta)clustering results
-|           |          | - Abundances: Relative population abundances
+|           | 09:45    | __Quality control__
+|           |          | - checking your cyto data with flowAI
+|           |          | - downsampling
 | Module 3  |          | 
-|           | 10:15    | __Cluster appraisal__
-|           |          | - Diagnostic plots for checking your clusters
-|           | 10:45    | __Break__
-| Module 4  |          | 
-|           | 11:00    | __Dimensional reduction__
+|           | 10:15    | __Dimensional reduction__
 |           |          | - TSNE, UMAP
 |           |          | - Visualizing reduced dimensions
+|           |          | - Visualizing clusters
+| Module 4  |          | 
+|           | 10:45    | __Cluster__
+|           |          | - FlowSOM cluster
+|           |          | - Diagnostic plots for checking your clusters
+|           | 11:15    | __Break__
 | Module 5  | 11:30    | 
 |           |          | __Differential testing with `diffcyt`__
+|           |          | - Intro to Bodenmiller BCR_XL data
 |           |          | - Differential abundance analysis of cells
 |           |          | - Differential functional analysis of cells
 |           | 12:30    | __Lunch__
