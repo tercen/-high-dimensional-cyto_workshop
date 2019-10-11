@@ -1,4 +1,4 @@
-High-dimensional cytometry data (including flow cytometry, mass cytometry or CyTOF, and oligonucleotide-tagged cytometry) is a challenge to analyze. Therefore two tools are proposed: the `diffcyt` R package (statistical algorithms) and Tercen (front-end interface).
+High-dimensional cytometry data (including flow cytometry, mass cytometry or CyTOF, and oligonucleotide-tagged cytometry) is a challenge to analyze. Therefore tools are proposed: `flowai`, `diffcyt` R package (statistical algorithms) and Tercen (a front-end interface).
 
 The `diffcyt` R package (Lukas Weber) implements statistical methods for differential discovery analyses in high-dimensional cytometry data based on a combination of high-resolution clustering and empirical Bayes moderated tests adapted from transcriptomics.
 
