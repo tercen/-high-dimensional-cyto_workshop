@@ -24,9 +24,9 @@ __High Dimensional Cyto Workshop Agenda__
 | :---      | :---:    | :---
 | Module 1  |          |
 |           | 09:00    | __Tercen Concepts__
-|           |          | concepts (e.g. measurements, table, computed table)
-|           |          | loading up data (e.g. csv and tsv)
-|           |          | creating views (e.g. heatmaps, line graphs, profiles)
+|           |          | - concepts (e.g. measurements, table, computed table)
+|           |          | - loading up data (e.g. csv and tsv)
+|           |          | - creating views (e.g. heatmaps, line graphs, profiles)
 |           | 09:30    | __Coffee Break__
 | Module 2  |          | 
 |           | 09:45    | __Quality control__
@@ -41,6 +41,7 @@ __High Dimensional Cyto Workshop Agenda__
 |           | 10:45    | __Clustering__
 |           |          | - FlowSOM clustering
 |           |          | - Diagnostic plots for checking your clusters
+|           |          | - Tunning the number of clusters
 |           | 11:15    | __Break__
 | Module 5  |          | 
 |           | 11:30    | __Differential testing with `diffcyt`__
