@@ -25,7 +25,7 @@ knitr::opts_chunk$set(echo = FALSE)
 - Dimension reduction (Module 3)
 - Clustering (Module 4)
 - Differential testing (Module 5)
-- Use your own data (Moudle 6)
+- Use your own data (Module 6)
 
 
 ## Module One
@@ -40,8 +40,8 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Module Two
 
-- wny check?
-- create project "QC_mode2"
+- why check?
+- create project "QC_module2"
 - load Bcells dataset
 - run flowai
 - exclude the bad cells
@@ -52,7 +52,7 @@ knitr::opts_chunk$set(echo = FALSE)
 - create project "dimreduction_mod3"
 - load Bodenmiller dataset
 - run tsne and umap
-- tsne vs umap discusson
+- tsne vs umap discussion
 
 ## Module Four
 
@@ -242,7 +242,7 @@ To download the data perform the following:
 - drag-n-drop `gene_symbol` to row
 - drag-n-drop `measurement` to color
 - select `heatmap` in drop down menu
-- resize the heatmap
+- re-size the heatmap
 
 
 ## Welcome to Tercen
