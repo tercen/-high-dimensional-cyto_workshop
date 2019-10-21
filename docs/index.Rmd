@@ -20,12 +20,55 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Agenda
 
-- Intro to Tercen conceps
-- Clustering
-- Cluster appraisal
-- Dimension reduction
-- Differential testing
-- use your own data
+- Intro to Tercen concepts (Module 1)
+- Quality control (Module 2)
+- Dimension reduction (Module 3)
+- Clustering (Module 4)
+- Differential testing (Module 5)
+- Use your own data (Moudle 6)
+
+
+## Module One
+
+- why tercen?
+- how to navigate
+- create project
+- load bodenmiller dataset
+- create a heatmap
+- run a scale on the data
+- run a asinh transformation
+
+## Module Two
+
+- wny check?
+- create project "QC_mode2"
+- load Bcells dataset
+- run flowai
+- exclude the bad cells
+
+## Module Three
+
+- why reduce?
+- create project "dimreduction_mod3"
+- load Bodenmiller dataset
+- run tsne and umap
+- tsne vs umap discusson
+
+## Module Four
+
+- automated vs manual?
+- create project "clustering_mod4"
+- load GvHD dataset
+- run flowsom tuning 
+- cluster metric discussion
+
+## Module Five
+
+- why use differential?
+- create project "differential_mod5"
+- load bodenmiller dataset
+- run diffcyto 
+- differential cyto discussion
 
 ## Module One
 
@@ -140,7 +183,7 @@ pie(c(80,20), labels=c("Wrangle", "Compute"), main="Where is time spent?", col=c
 
 Use chrome and go to:
 
-https://dev.tercen.com/  
+https://test.tercen.com/  
 
 login: `lucy2` 
 
@@ -151,7 +194,7 @@ password: `habilis2`
 - Create a team 
    - use your name for the team name
 - Create a project
-   - use `khan 2001`
+   - use `module1`
 - Click on the newly created project
    - There is a new menu on the left
        - `Create a data set`
