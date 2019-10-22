@@ -27,22 +27,22 @@ __High Dimensional Cyto Workshop Agenda__
 |           |          | - concepts (e.g. measurements, table, computed table)
 |           |          | - loading up data (e.g. csv and tsv)
 |           |          | - creating views (e.g. heatmaps, line graphs, profiles)
-|           | 09:30    | __Coffee break__
 | Module 2  |          | 
-|           | 09:45    | __Quality control__
+|           | 09:30    | __Quality control__
+|           |          | - Intro to B-cells data
 |           |          | - checking your cyto data with flowAI
 |           |          | - downsampling
 | Module 3  |          | 
-|           | 10:15    | __Dimensional reduction__
+|           | 10:00    | __Dimensional reduction__
 |           |          | - TSNE, UMAP operator
 |           |          | - Visualizing reduced dimensions
-|           |          | - Visualizing clusters
+|           |          | - Visualizing and capturing clusters
+|           | 10:30    | __Coffee break__
 | Module 4  |          | 
 |           | 10:45    | __Clustering__
 |           |          | - FlowSOM clustering
 |           |          | - Diagnostic plots for checking your clusters
 |           |          | - Tunning the number of clusters
-|           | 11:15    | __Coffee break__
 | Module 5  |          | 
 |           | 11:30    | __Differential testing with `diffcyt`__
 |           |          | - Intro to Bodenmiller BCR_XL dataset (see [screenshot](https://github.com/tercen/highdimcyto_workshop/blob/master/images/bodenmiller.png))
