@@ -70,9 +70,14 @@ knitr::opts_chunk$set(echo = FALSE)
 
 <img src="../images/cluster_metrics.png" height="500px" width="800px" />
 
+
+## Silhouette Metric
+
+<img src="../images/silhouette.png" height="500px" width="900px" />
+
 ## Module Five
 
-- why use differential?
+- why use differential analysis?
 - create project "differential_mod5"
 - load bodenmiller dataset
 - run diffcyto 
