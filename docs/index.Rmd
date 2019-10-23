@@ -35,8 +35,8 @@ knitr::opts_chunk$set(echo = FALSE)
 - create project
 - load bodenmiller dataset
 - create a heatmap
-- run a scale on the data
-- run a asinh transformation
+- run a `scale` on the data
+- run a `asinh` transformation
 
 ## Module Two
 
@@ -54,6 +54,10 @@ knitr::opts_chunk$set(echo = FALSE)
 - run tsne and umap
 - tsne vs umap discussion
 
+## TSNE vs UMAP
+
+<img src="../images/umap_tsne_pca.png" height="500px" width="800px" />
+
 ## Module Four
 
 - automated vs manual?
@@ -61,6 +65,10 @@ knitr::opts_chunk$set(echo = FALSE)
 - load GvHD dataset
 - run flowsom tuning 
 - cluster metric discussion
+
+## Clustering Metrics
+
+<img src="../images/cluster_metrics.png" height="500px" width="800px" />
 
 ## Module Five
 
@@ -70,16 +78,7 @@ knitr::opts_chunk$set(echo = FALSE)
 - run diffcyto 
 - differential cyto discussion
 
-## Module One
-
-- intro to Tercen
-- concepts (e.g. measurements, table, computed table)
-- loading up data (e.g. csv and tsv)
-- creating a Tercen workflow
-- visuals (points, heatmaps, line graphs, bar graphs, pairwise)
-- visual wrangling
-- navigate (in data, in projects)
-
+# Module One
 
 ## Researchers' Challenges
 
@@ -125,14 +124,14 @@ knitr::opts_chunk$set(echo = FALSE)
 ## Wide format
 
 ```{r results = 'asis'}
-data <- read.delim2(file = file.path("..", "data","genes_wide.tsv")) 
+data <- read.delim2(file = file.path("..", "data","markers_wide.tsv")) 
 knitr::kable(data[, 1:3], align = "lll")
 ```
 
 ## Long format
 
 ```{r results = 'asis'}
-data <- read.delim2(file = file.path("..", "data","genes_long.tsv")) 
+data <- read.delim2(file = file.path("..", "data","markers_long.tsv")) 
 knitr::kable(data[1:6,], align = "lll")
 ``` 
 
@@ -141,7 +140,7 @@ knitr::kable(data[1:6,], align = "lll")
 After a mean operator of all genes per sample:
 
 ```{r results = 'asis'}
-data <- read.delim2(file = file.path("..", "data","genes_mean.tsv")) 
+data <- read.delim2(file = file.path("..", "data","markers_mean.tsv")) 
 knitr::kable(data[1:2,], align = "lll")
 ``` 
 
@@ -185,9 +184,9 @@ Use chrome and go to:
 
 https://test.tercen.com/  
 
-login: `lucy2` 
+login: `lucy` 
 
-password: `habilis2`
+password: `habilis`
 
 ## Set up
 
@@ -205,7 +204,7 @@ password: `habilis2`
 
 To download the data perform the following:
 
-- click on https://raw.githubusercontent.com/tercen/user_workshop/master/data/khan_long.csv
+- click on https://raw.githubusercontent.com/tercen/user_workshop/master/data/bodenmiller.csv
 - right click and "Save As" onto desktop
 
 ## Create the data in Tercen
@@ -217,17 +216,17 @@ To download the data perform the following:
 ## Create a workflow in Tercen
 
 - click on `Create a workflow`
-- give `khan` as workflow name
+- give `bodenmiller` as workflow name
    - a white canvas appears
 
 ## Add table
 
 - right click on canvas and choose `Add`
 - select `Table`
-- select `khan_long`
+- select `bodenmiller_long`
    - a table step appear on the canvas
 - right click on the new table step and choose `Rename`
-   - rename it what you like, suggestion: `khan2001`
+   - rename it what you like, suggestion: `bodenmiller2001`
    
 ## Add data step
 
@@ -291,23 +290,21 @@ To go down:
 - click on workflow
 - click on data
 
-## Coffee break
+# Module Two
 
-<center><img src="../images/coffee.png"/></center>
 
-## Module Two
+## Recap Module One
 
-- Recap Module One
-    + motivation
-    + table concept
-    + teams, projects, workflows
-    + visual wrangling (i.e. projections) using cross-tab
+- motivation
+- table concept
+- teams, projects, workflows
+- visual wrangling (i.e. projections) using cross-tab
 - Agenda Module Two
     + Clustering (TBD)
 
-## Module Three
+# Module Three
 
-- Recap Module Two
+## Recap Module Two
 - Agenda Module Three
     + Clustering appraisal (TBD)
     
@@ -315,20 +312,26 @@ To go down:
 
 <center><img src="../images/coffee.png"/></center>
 
-## Module Four
+# Module Four
 
-- Recap Module Three
+## Recap Module Three
+
 - Agenda Module Four
     + Dimension Reduction (TBD)
 
-## Module Five
+# Module Five
 
-- Recap Module Four
-- Agenda Module Five
+## Recap Module Four
+
+## Agenda Module Five
     + Differential abundance analysis
     + Differential functional analysis
 
-## Module Six
+## Lunch
+
+<center><img src="../images/lunch.png"/></center>
+
+# Module Six
 
 - one-2-one sessions
 - practice

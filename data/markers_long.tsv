@@ -1,0 +1,10 @@
+event_id	marker_id	measurement
+event_1	marker_1	10
+event_2	marker_1	50
+event_3	marker_1	25
+event_1	marker_2	12
+event_2	marker_2	45
+event_3	marker_2	30
+event_1	marker_3	12
+event_2	marker_3	45
+event_3	marker_3	30
