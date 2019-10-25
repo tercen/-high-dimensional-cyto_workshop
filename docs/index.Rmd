@@ -13,7 +13,6 @@ knitr::opts_chunk$set(echo = FALSE)
 ## Welcome, blast off
 <center><img src="../images/rocket.gif" height="300px" /></center>
 
-
 <center>workshop on github </center>
 
 <center>(https://github.com/tercen/highdimcyto_workshop)</center>
@@ -36,13 +35,14 @@ knitr::opts_chunk$set(echo = FALSE)
 * Integrate any database
 * Visualize and interact
 * Knowing what algorithm to use
+* Understanding the particularities of an algorithm
 
 
 <center><img src="../images/fish2.gif" height="200px" /></center>
 
 ## Tools evolution
 
-* Calculators, log tables (_homo homini_)
+* Calculators, log tables, abacus (_homo homini_)
 * Excel and Graphpad (_homo australopithecus e.g. Lucy_)
 * Tercen (_homo habilis_)
 * Unknown (_homo sapien_)
@@ -63,10 +63,10 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Concepts and terms
 
-- measurement (e.g. gene expression value)
-- variable (e.g. gene)
-- observation (e.g. samples )
-- annotation (e.g. of genes or sample)
+- measurement (e.g. marker value)
+- variable (e.g. marker/channel)
+- observation (e.g. samples)
+- annotation (e.g. of marker or sample)
 
 <center>all are factors!!!</center>
 
@@ -86,7 +86,7 @@ knitr::kable(data[1:6,], align = "lll")
 
 ## Computed table
 
-After a mean operator of all genes per sample:
+After a mean operator of all markers per sample:
 
 ```{r results = 'asis'}
 data <- read.delim2(file = file.path("..", "data","markers_mean.tsv")) 
@@ -94,6 +94,7 @@ knitr::kable(data[1:2,], align = "lll")
 ``` 
 
 ## Relational algebra
+
 - how to define a relation between two Tables
 - operators create new Tables (but also relations)
 - relations between tables
@@ -101,8 +102,8 @@ knitr::kable(data[1:2,], align = "lll")
 - be careful of the vocabulary
 - need only understand the concepts
 
-## Univeral table
-- Tercen sees all the tables as one big integrated table
+## Universal table
+- Tercen sees all the tables as one large integrated table
 
 ## Wrangling
 
@@ -115,8 +116,6 @@ knitr::kable(data[1:2,], align = "lll")
 pie(c(80,20), labels=c("Wrangle", "Compute"), main="Where is time spent?", col=c("orange","green"), border="white", clockwise=FALSE)
 
 ```
-
-
 
 ## Let's start
 
@@ -139,22 +138,23 @@ password: `habilis`
 
 ## Set up
 
-- Create a team 
-   - use your name for the team name
 - Create a project
-   - use `module1`
+   - use `module1 intro`
 - Click on the newly created project
    - There is a new menu on the left
        - `Create a data set`
        - `Create a workflow`
+       - `Upload a file`
        - `Import a workflow`
    
 ## Download the data for workshop
 
 To download the data perform the following:
 
-- click on https://raw.githubusercontent.com/tercen/user_workshop/master/data/bodenmiller.csv
+- click on https://raw.githubusercontent.com/tercen/highdimcyto_workshop/master/data/bodenmiller.csv
 - right click and "Save As" onto desktop
+- same thing for https://raw.githubusercontent.com/tercen/highdimcyto_workshop/master/data/Bcells1_01.csv
+
 
 ## Create the data in Tercen
 
@@ -192,7 +192,6 @@ To download the data perform the following:
 - select `heatmap` in drop down menu
 - re-size the heatmap
 
-
 ## Welcome to Tercen
 <center><img src="../images/welldone.png"/></center>
 
@@ -210,6 +209,11 @@ To download the data perform the following:
 
 - different types
 - different values
+
+## Adding more factors
+
+- group_id, sample_id, patient_id
+- marker_class, marker_channel
 
 ## Bar graphs (sample replicates)
 - create a bar graph
@@ -238,7 +242,6 @@ To go down:
 - click on project
 - click on workflow
 - click on data
-
 ## Module One
 
 - why tercen?
@@ -258,12 +261,10 @@ To go down:
 - table concept
 - teams, projects, workflows
 - visual wrangling (i.e. projections) using cross-tab
-- Agenda Module Two
-    + Clustering (TBD)
 
-## Module Two 
+## Module Two
 
-- why check?
+- why QC the data?
 - create a workflow "module2 QC"
 - load Bcells dataset
 - run flowai
@@ -274,13 +275,15 @@ To go down:
 
 ## Recap
 
-- Agenda Module Three
-    + Clustering appraisal (TBD)
+- loaded data
+- created a projection
+- ran flowai
+- removed bad cells
 
 ## Module Three
 
-- why reduce?
-- create a workflow "module2 dimreduction"
+- why reduce dimensions?
+- create a workflow "module3 dimreduction"
 - load Bodenmiller dataset
 - run tsne, umap and pca
 - tsne vs umap discussion
@@ -297,13 +300,16 @@ To go down:
 
 ## Recap
 
-- Agenda Module Four
-    + Dimension Reduction (TBD)
+- selected data
+- defined a projection
+- ran upmap, tsne, pca
+- defined a projection for the output, plot
+- colored by a factor
 
 ## Module Four
 
-- automated vs manual?
-- create a workflow "module3 clustering"
+- automated vs manual
+- create a workflow "module4 clustering"
 - load GvHD dataset
 - run flowsom tuning 
 - cluster metric discussion
@@ -322,13 +328,23 @@ To go down:
 
 ## Recap
 
+- seleted data
+- defined a projection
+- ran flowsom
+- ran flowsom (with tuning)
+- defined a projection for the output
+
 ## Module Five
 
 - why use differential analysis?
-- create a workflow "module4 diff analysis"
+- create a workflow "module5 diff analysis"
 - load bodenmiller dataset
-- run diffcyto 
+- run diffcyto
 - differential cyto discussion
+
+## Freedom
+
+<center><img src="../images/break_chains.gif"/></center>
 
 ## Lunch
 
@@ -339,10 +355,6 @@ To go down:
 - one-2-one sessions
 - practice
 - use you own data
-
-## End
-
-<center><img src="../images/break_chains.gif"/></center>
 
 
 ## Guides
