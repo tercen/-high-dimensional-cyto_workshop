@@ -27,62 +27,6 @@ knitr::opts_chunk$set(echo = FALSE)
 - Differential testing (Module 5)
 - Use your own data (Module 6)
 
-
-## Module One
-
-- why tercen?
-- how to navigate
-- create project
-- load bodenmiller dataset
-- create a heatmap
-- run a `scale` on the data
-- run a `asinh` transformation
-
-## Module Two
-
-- why check?
-- create project "QC_module2"
-- load Bcells dataset
-- run flowai
-- exclude the bad cells
-
-## Module Three
-
-- why reduce?
-- create project "dimreduction_mod3"
-- load Bodenmiller dataset
-- run tsne and umap
-- tsne vs umap discussion
-
-## TSNE vs UMAP
-
-<img src="../images/umap_tsne_pca.png" height="500px" width="800px" />
-
-## Module Four
-
-- automated vs manual?
-- create project "clustering_mod4"
-- load GvHD dataset
-- run flowsom tuning 
-- cluster metric discussion
-
-## Clustering Metrics
-
-<img src="../images/cluster_metrics.png" height="500px" width="800px" />
-
-
-## Silhouette Metric
-
-<img src="../images/silhouette.png" height="500px" width="900px" />
-
-## Module Five
-
-- why use differential analysis?
-- create project "differential_mod5"
-- load bodenmiller dataset
-- run diffcyto 
-- differential cyto discussion
-
 # Module One
 
 ## Researchers' Challenges
@@ -221,17 +165,17 @@ To download the data perform the following:
 ## Create a workflow in Tercen
 
 - click on `Create a workflow`
-- give `bodenmiller` as workflow name
+- give `module1 intro` as workflow name
    - a white canvas appears
 
 ## Add table
 
 - right click on canvas and choose `Add`
 - select `Table`
-- select `bodenmiller_long`
+- select `bodenmiller`
    - a table step appear on the canvas
 - right click on the new table step and choose `Rename`
-   - rename it what you like, suggestion: `bodenmiller2001`
+   - rename it what you like, suggestion: `bodenmiller`
    
 ## Add data step
 
@@ -242,8 +186,8 @@ To download the data perform the following:
 ## Configure data step
 
 - drag-n-drop `measurement` to y-axis
-- drag-n-drop `sample name` to col
-- drag-n-drop `gene_symbol` to row
+- drag-n-drop `Time` to col
+- drag-n-drop `marker_name` to row
 - drag-n-drop `measurement` to color
 - select `heatmap` in drop down menu
 - re-size the heatmap
@@ -270,11 +214,11 @@ To download the data perform the following:
 ## Bar graphs (sample replicates)
 - create a bar graph
 
-## Line graphs (gene profiles)
-- create a gene profile
+## Line graphs (marker profiles)
+- create a marker profile
 
-## Pairwise sample plots
-- create a sample vs sample
+## Pairwise marker plots
+- create a marker vs marker
 
 ## Save workflow
 
@@ -295,10 +239,20 @@ To go down:
 - click on workflow
 - click on data
 
-# Module Two
+## Module One
 
+- why tercen?
+- how to navigate
+- create project with your name
+- create a workflow "module1 intro"
+- load bodenmiller dataset
+- create a heatmap
+- run a `scale` on the data
+- run a `asinh` transformation
 
-## Recap Module One
+# Module Two Quality Control
+
+## Recap
 
 - motivation
 - table concept
@@ -307,30 +261,74 @@ To go down:
 - Agenda Module Two
     + Clustering (TBD)
 
-# Module Three
+## Module Two 
 
-## Recap Module Two
+- why check?
+- create a workflow "module2 QC"
+- load Bcells dataset
+- run flowai
+- exclude the bad cells
+
+
+# Module Three Dimension Reduction
+
+## Recap
+
 - Agenda Module Three
     + Clustering appraisal (TBD)
+
+## Module Three
+
+- why reduce?
+- create a workflow "module2 dimreduction"
+- load Bodenmiller dataset
+- run tsne, umap and pca
+- tsne vs umap discussion
+
+## TSNE vs UMAP
+
+<img src="../images/umap_tsne_pca.png" height="500px" width="800px" />
     
 ## Coffee break
 
 <center><img src="../images/coffee.png"/></center>
 
-# Module Four
+# Module Four Clustering
 
-## Recap Module Three
+## Recap
 
 - Agenda Module Four
     + Dimension Reduction (TBD)
 
-# Module Five
+## Module Four
 
-## Recap Module Four
+- automated vs manual?
+- create a workflow "module3 clustering"
+- load GvHD dataset
+- run flowsom tuning 
+- cluster metric discussion
 
-## Agenda Module Five
-    + Differential abundance analysis
-    + Differential functional analysis
+## Clustering Metrics
+
+<img src="../images/cluster_metrics.png" height="500px" width="800px" />
+
+
+## Silhouette Metric
+
+<img src="../images/silhouette.png" height="500px" width="900px" />
+
+
+# Module Five Differential Analysis
+
+## Recap
+
+## Module Five
+
+- why use differential analysis?
+- create a workflow "module4 diff analysis"
+- load bodenmiller dataset
+- run diffcyto 
+- differential cyto discussion
 
 ## Lunch
 
